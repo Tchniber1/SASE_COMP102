@@ -7,6 +7,6 @@ def generate_binary_strings(n, base):
          for s in res:
             ans.append(s + str(i))
     return ans
-n = 3
+n = 100
 base = 2
 print(generate_binary_strings(n, base)) # Output: ['000', '001', '010', '011', '100', '101', '110', '111']
