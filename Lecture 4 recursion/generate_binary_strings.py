@@ -7,6 +7,9 @@ def generate_binary_strings(n, base):
          for s in res:
             ans.append(s + str(i))
     return ans
-n = 100
-base = 2
-print(generate_binary_strings(n, base)) # Output: ['000', '001', '010', '011', '100', '101', '110', '111']
+def count_bit_strings(n):
+    MOD = 10**9 + 7
+    result = generate_binary_strings(n, 2)
+    return len(result) % MOD
+n = int(input())
+print(count_bit_strings(n))
